@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cat 2 Studio</title>
+  <meta name="description" content="Cat 2 Studio — an independent game studio.">
+  <meta property="og:title" content="Cat 2 Studio">
+  <meta property="og:description" content="An independent game studio.">
+  <meta property="og:image" content="https://cat2games.com/assets/logo.png">
+  <meta property="og:url" content="https://cat2games.com/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: #faf6ef url("assets/paper-bg.jpg") center / cover no-repeat fixed;
+      color: #3a3632;
+      font-family: "Segoe UI", system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    h1 { margin: 0; }
+    .logo {
+      display: block;
+      width: min(560px, 86vw);
+      height: auto;
+      animation: rise 1.2s ease-out both;
+    }
+    .tagline {
+      margin: 28px 0 0;
+      font-size: 0.95rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: #8a7f74;
+      animation: rise 1.2s 0.3s ease-out both;
+    }
+    footer {
+      font-size: 0.8rem;
+      color: #a39a90;
+      letter-spacing: 0.05em;
+    }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: none; }
+    }
+    @media (max-width: 480px) {
+      .tagline { font-size: 0.75rem; letter-spacing: 0.2em; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .logo, .tagline { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1><img class="logo" src="assets/logo.png" alt="Cat 2 Studio" width="826" height="509"></h1>
+    <p class="tagline">Independent Game Studio</p>
+  </main>
+  <footer>&copy; 2026 Cat 2 Studio</footer>
+</body>
+</html>
